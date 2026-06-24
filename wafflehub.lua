@@ -40,7 +40,13 @@ local function createtextlabel(text, size, pos, parent, hasbg, isleft, hasaero)
         textlabel.TextXAlignment = Enum.TextXAlignment.Left
     end
     if hasaero == true then
-
+        local textaero = Instance.new("ImageLabel")
+        textaero.Parent = textlabel
+        textaero.Size = UDim2.new(1, 4, 1, 4)
+        textaero.Image = "rbxassetid://305266753"
+        textaero.ScaleType = Enum.ScaleType.Slice
+        textaero.SliceCenter = Rect.new(10, 10, 10, 10)
+        textaero.BackgroundTransparency = 1
     end
 end
 
@@ -54,7 +60,7 @@ gui.BackgroundTransparency = 0.7
 gui.ImageTransparency = 1
 gui.BorderSizePixel = 0
 
---local guiaero = Instance.new("ImageLabel")
+local guiaero = Instance.new("ImageLabel")
 guiaero.Parent = gui
 guiaero.Size = UDim2.new(1, 16,1, 16)
 guiaero.Position = UDim2.new(0, -8, 0, -8)
