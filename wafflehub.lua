@@ -475,6 +475,7 @@ end)
     plr.PlayerGui.MainGui.Hud.InGame.ReadyFrame.Changed:Connect(function(v)
         if enablevote.Text == "enable autovote: true" then
             print("Voted for locking in")
+			task.wait(0.5)
             local Event = game:GetService("ReplicatedStorage").Remotes.UpdatePreparation
             Event:InvokeServer()
         end
