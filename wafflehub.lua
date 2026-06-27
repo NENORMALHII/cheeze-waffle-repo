@@ -516,7 +516,7 @@ end)
                     end
                 end
             elseif not plr.Character:FindFirstChild(weapon.Text) and enablefarm.Text == "enable farm: true" then
-                plr.Character:WatiForChild("Humanoid"):EquipTool(plr.Backpack:WaitForChild(weapon.Text))
+                plr.Character:WaitForChild("Humanoid"):EquipTool(plr.Backpack:WaitForChild(weapon.Text))
             end
         end
     end))
@@ -534,7 +534,7 @@ end)
                     end
                 end
                 elseif not plr.Character:FindFirstChild(weapon.Text) and enablefarm.Text == "enable farm: true" then
-                    plr.Character:WatiForChild("Humanoid"):EquipTool(plr.Backpack:WaitForChild(weapon.Text))
+                    plr.Character:WaitForChild("Humanoid"):EquipTool(plr.Backpack:WaitForChild(weapon.Text))
             end
         end
     end))
